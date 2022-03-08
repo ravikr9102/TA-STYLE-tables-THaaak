@@ -1,0 +1,440 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* My Resets */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+/* General */
+
+*{
+   overflow-x:hidden; 
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+.w-100{
+    width: 100%;
+}
+
+/* Container */
+
+.container{
+    max-width: 1100px;
+    padding: 0 32px;
+    margin: 0 auto;
+}
+
+/* Flex */
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.strong{
+    color: #fb1212;
+}
+
+/* Button */
+
+.btn{
+    display: inline-block;
+    padding: 8px;
+    text-transform: uppercase;
+    background-color: #fb1212;
+    color: #ffffff;
+    border: none;
+}
+.btn-primary{
+    background-color: rgb(255, 13, 13);
+}
+
+/* Header */
+
+.header{
+    background: rgba(0,0,0,0.2);
+    padding: 12px;
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+}
+.header h2{
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-left: 80px;
+}
+.header strong{
+    color: #fb1212;
+}
+
+/* Navbar */
+
+.nav-menu-item a{
+    margin-left: 48px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.nav-menu .btn{
+    margin-left: 48px;
+}
+.nav-menu-item .active{
+    color: #fb1212;
+}
+
+/* hero */
+
+.hero{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+.hero-strong{
+    color: #fb1212;
+}
+.sub-heading{
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.hero h1{
+    font-size: 42px;
+    color: #ffffff;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+video{
+    width: 100% ;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0 ;
+    right: 0 ;
+    object-fit: cover;
+
+}
+.overlay{
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 250px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+}
+
+/* Secondary section starts here */
+.program{
+    text-align: center;
+    padding: 20px 0;
+}
+.program h2{
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.program p{
+    font-size: 15px;
+    color: #8b8888;
+}
+.program-fig{
+    margin: 0 16px;   
+}
+.program-fig img{
+    width: 100%;
+}
+.flex-48{
+    flex: 0 1 48%;
+    margin: 20px auto;
+}
+.flex-48 a{
+    color: #fb1212;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.flex-48 h4{
+    font-weight: 600;
+}
+.flex-48 p{
+    font-size: 15px;
+    color: #999898;
+}
+
+/* Section-three starts here */
+
+.bg-img{
+    background: url('../media/cta-bg.jpg');
+    background-size: cover;
+    width: 100%;
+}
+.bg-img strong{
+    color: #fb1212;
+}
+.article{
+    text-align: center;
+    padding: 80px 0;
+}
+.article h2{
+    font-size: 36px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.article p{
+    font-size: 15px;
+    color: #999898;
+}
+.article .btn{
+    margin: 10px 0;
+}
+
+/* Section-four starts here */
+
+.our-class{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.our-class .active{
+    color: #fb1212;
+}
+.hd h3{
+    margin-left: 20px;
+}
+.border{
+    border: 1px solid #dddddd;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+}
+.border h3{
+    font-weight: 700;
+}
+.aside-btn{
+    width: 100%;
+}
+.flex-30{
+    flex: 0 1 35%;
+}
+.flex-60{
+    flex: 0 1 60%;
+}
+.flex-65 img{
+    width: 100%;
+}
+.flex-60 .btn{
+    margin: 20px 0;
+}
+
+/* Section-five starts here */
+.section-five {
+    padding: 4% 0;
+    background: url(../media/schedule-bg.jpg);
+    background-size: cover;
+    background-position: 100%;
+}
+.daily-routine{
+    text-align: center;
+    color: #ffffff;
+    margin: 20px 0;
+}
+.section-five .active{
+    color: #fb1212;
+}
+table {
+    border: 1px solid;
+    border-collapse: collapse;
+    margin: 20px auto;
+    color: #d8d7d7;
+}
+td,
+th{
+    border: 1px solid;
+    padding: 20px 30px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+/* Section-six starts here */
+
+.col-1{
+    flex: 0 1 31%;
+    padding: 30px;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+}
+.col-1 strong{
+    color: #fb1212;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin: 16px 0;
+}
+.col-1 h3{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+.col-1 p{
+    font-size: 16px;
+    color: #928f8f;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+}
+.icon a{
+    margin-right: 16px;
+    color: #000;
+}
+
+/*  Contact-section */
+
+.contact-section{
+    height: 60vh;
+    margin: 30px 0  0 0 ;
+}
+.map-container{
+    flex: 0 1 50%;
+    height: 100%;
+    position: relative;
+    background-color: red;
+}
+.map-container iframe{
+    position:absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.contact-container{
+    flex: 0 1 50%;
+    height: 100%;
+    background-image: url('../media/contact-bg.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 6px;
+}
+.inputBox{
+    display: block;
+    padding: 9px;
+    width: 100%;
+    margin-bottom: 10px;
+    outline: none;
+    border: 1px solid #dddddd;
+}
+form .row{
+    display: flex;
+    justify-content: space-between;
+}
+form .row input{
+    flex: 0 1 48%;
+}
+
+.form-control{
+    display: flex;
+}
+.form-control input{
+    padding: 10px;
+    margin: 8px;
+}
+.contact-img{
+    position: relative;
+}
+.contact-img img{
+    margin-top: 20px;
+    height: 450px;
+}
+
+.form input{
+    margin-bottom: 10px;
+}
+
+
+/* Footer */
+.footer{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 14px;
+}
+.footer strong{
+    color: #fb1212;
+}
